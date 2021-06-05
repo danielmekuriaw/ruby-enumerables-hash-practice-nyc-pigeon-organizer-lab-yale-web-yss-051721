@@ -18,35 +18,6 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(data)
-  # write your code here!
-  
-  names = []
-  
-  data.each{ |key, value|
-    value.each{ |key2, value2|
-      names += value2 
-    }
-  }
-  
-  uniq_names = names.uniq
-  
-  data.each{ |key, value|
-    value.each{ |key2, value2|
-      uniq_names.each{ |name|
-        temp = []
-        {
-          name => {key => temp.push 
-          }
-        }
-        
-      }
-    }
-  
-
-  
-end
-
-def nyc_pigeon_organizer(data)
 	final results = data.each_with_object({}) do |(key, value), final_array|
 		value.each do |inner_key, names|
 			names.each do |name|
